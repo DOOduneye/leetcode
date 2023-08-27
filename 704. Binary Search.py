@@ -9,6 +9,7 @@
 from typing import List
 from functools import lru_cache
 
+# O(log n)
 class Solution:
     # Recursive
     def search(self, nums: List[int], target: int) -> int:
@@ -24,7 +25,6 @@ class Solution:
             self.binarySearch(nums, target, middle + 1, high)
         else:
             return nums[middle]
-
 
     # Iterative 
     def binary_search(arr: List[int], target: int) -> int:
