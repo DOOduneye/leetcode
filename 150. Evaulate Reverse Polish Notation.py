@@ -45,7 +45,7 @@ class Solution:
 
         return math.floor(stack[-1])
 
-    def evalRPN(self, tokens: List[str]) -> int:
+    def evalRPNShorter(self, tokens: List[str]) -> int:
         stack = []
         for c in tokens:
             if c == "+":

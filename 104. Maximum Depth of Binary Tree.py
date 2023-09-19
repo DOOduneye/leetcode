@@ -32,7 +32,7 @@ class Solution:
         return max(left_count, right_count)
 
     # O(n)
-    def maxDepth(self, root: Optional[TreeNode]) -> int:
+    def maxDepthShorter(self, root: Optional[TreeNode]) -> int:
         if not root:
             return 0
         

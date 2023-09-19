@@ -38,7 +38,7 @@ class Solution:
 
 
     # O(n) | O(1) space
-    def productExceptSelf(self, nums: List[int]) -> List[int]:
+    def productExceptSelfOptimal(self, nums: List[int]) -> List[int]:
         res = [1] * (len(nums))
 
         prefix = 1

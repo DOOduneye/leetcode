@@ -25,7 +25,7 @@ class Solution:
                 return [hashmap[find], i]
     
     # O(n)
-    def twoSum(self, nums: List[int], target: int) -> List[int]:
+    def twoSumShorter(self, nums: List[int], target: int) -> List[int]:
         if len(nums) == 2:
             return [0,1]
 

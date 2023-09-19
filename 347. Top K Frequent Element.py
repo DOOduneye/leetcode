@@ -25,13 +25,9 @@ class Solution:
 
         return output
 
-    # O(n + k log n)
-    def topKFrequent(self, nums: List[int], k: int) -> List[int]:
-        counter = Counter(nums)
-        return heapq.nlargest(k, counter.keys(), key=counter.get)
 
     # O(n)
-    def topKFrequent(self, nums: List[int], k: int) -> List[int]:
+    def topKFrequentOptimal(self, nums: List[int], k: int) -> List[int]:
         count = {}
         freq = [[] for i in range(len(nums) + 1)]
         

@@ -36,7 +36,7 @@ class Solution:
         return output
     
     # O (n * m) 
-    def groupAnagrams(self, strs: List[str]) -> List[List[str]]:
+    def groupAnagramsOptimal(self, strs: List[str]) -> List[List[str]]:
         hashmap = defaultdict(list)
             
         for value in strs:
@@ -48,7 +48,7 @@ class Solution:
         return list(hashmap.values())
 
     # O(n * m * log(m))
-    def groupAnagrams(self, strs: List[str]) -> List[List[str]]:
+    def groupAnagramsPythonic(self, strs: List[str]) -> List[List[str]]:
         hashmap = defaultdict(list)
             
         for value in strs:
